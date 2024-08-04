@@ -7,6 +7,7 @@ import {
   Register,
   Wrapper,
 } from "./style";
+import Link from "next/link";
 
 const Navbar = () => {
   return (
@@ -17,13 +18,25 @@ const Navbar = () => {
           <span className="logo-goal">Goal</span>
         </Logo>
         <MenuItems>
-          <MenuItem>Home</MenuItem>
-          <MenuItem>About</MenuItem>
-          <MenuItem>Packages</MenuItem>
-          <MenuItem>Contact Us</MenuItem>
-          <MenuItem>FAQ</MenuItem>
+          <MenuItem>
+            <Link href="/">Home</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link href="/about">About</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link href="/packages">Packages</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link href="/contact">Contact Us</Link>
+          </MenuItem>
+          <MenuItem>
+            <Link href="/faq">FAQ</Link>
+          </MenuItem>
         </MenuItems>
-        <Register>Register</Register>
+        <Register>
+          <Link href="/register">Registe</Link>
+        </Register>
       </Wrapper>
     </Container>
   );

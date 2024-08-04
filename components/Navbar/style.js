@@ -33,6 +33,9 @@ export const Logo = styled.div`
       border-radius: 50%;
     }
   }
+  user-select: none;
+  -webkit-user-select: none;
+  cursor: context-menu;
 `;
 export const MenuItems = styled.ul`
   display: flex;
@@ -42,35 +45,44 @@ export const MenuItems = styled.ul`
   list-style: none;
 `;
 export const MenuItem = styled.li`
-  position: relative;
-  font-family: "inter", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  text-align: left;
-  color: var(--primary-text-color);
-  cursor: pointer;
-  transition: all 0.1s ease;
-  user-select: none;
-  -webkit-user-select: none;
+  a {
+    position: relative;
+    font-family: "inter", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    text-decoration: none;
+    color: var(--primary-text-color);
+    cursor: pointer;
+    transition: all 0.1s ease;
+    user-select: none;
+    -webkit-user-select: none;
 
-  &:hover {
-    color: var(--primary-color);
+    &:hover {
+      color: var(--primary-color);
+    }
   }
 `;
 export const Register = styled.button`
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18px;
-  text-align: center;
+  a {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--white-color);
+  }
   padding: 16px 29px;
-  color: var(--white-color);
   background-color: var(--primary-color);
   border-radius: 10px;
   border: 0;
   cursor: pointer;
   transition: all 0.2s ease;
 
+  &:hover {
+    box-shadow: 0 0 2px var(--primary-color);
+  }
   &:active {
     transform: scale(0.98);
   }
