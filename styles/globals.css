@@ -1,12 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  --primary-color: #3685fb;
+  --white-color: #ffffff;
+  --primary-text-color: #002248;
+  --secondary-text-color: #697687;
+  --info-text-color: #00b3a0;
+}
 * {
+  font-family: "Inter";
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 135px;
 }
