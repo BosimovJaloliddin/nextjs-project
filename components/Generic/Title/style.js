@@ -7,6 +7,7 @@ export const Container = styled.h1`
   text-align: ${({ textA }) => textA && textA};
   margin-bottom: ${({ mb }) => mb && `${mb}px`};
   margin-bottom: ${({ mt }) => mt && `${mt}px`};
+  text-transform: capitalize;
   line-height: 60px;
   color: #002248;
 `;
