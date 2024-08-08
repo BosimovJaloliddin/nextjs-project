@@ -14,12 +14,13 @@ const Header = () => {
     <Container>
       <Wrapper className="container">
         <Section>
-          <Image src={img1} width={320} height={440} />
+          <Image src={img1} width={320} height={440} alt="header-1" />
           <Image
             src={img2}
             width={240}
             height={330}
             style={{ position: "absolute", left: 190, top: 160 }}
+            alt="header-2"
           />
         </Section>
         <Section>
