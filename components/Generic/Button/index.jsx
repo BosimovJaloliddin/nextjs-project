@@ -3,7 +3,7 @@ import { Container } from "./style";
 
 const GenericButton = (props) => {
   const { children } = props;
-  return <Container>{children}</Container>;
+  return <Container {...props}>{children}</Container>;
 };
 
 export default GenericButton;

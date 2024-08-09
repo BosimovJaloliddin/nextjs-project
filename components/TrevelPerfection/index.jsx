@@ -10,7 +10,7 @@ const TrevelPerfection = () => {
       <InfoTitle textA="center" mb={10}>
         3 steps for the perfect trip
       </InfoTitle>
-      <Title textA="center" mb={20}>
+      <Title textA="center" mb={20} fs={40}>
         Find travel perfection
       </Title>
       <Subtitle textA="center" mb={70}>
