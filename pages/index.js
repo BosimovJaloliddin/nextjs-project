@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import TrevelPerfection from "@/components/TrevelPerfection";
 import Location from "@/components/Location";
 import Tour from "@/components/Tour";
+import About from "@/components/About";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function Home() {
         <TrevelPerfection />
         <Location />
         <Tour />
+        <About />
       </div>
     </>
   );
