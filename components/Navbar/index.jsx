@@ -1,4 +1,7 @@
 import React from "react";
+import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 import {
   Container,
   Logo,
@@ -7,9 +10,14 @@ import {
   Register,
   Wrapper,
 } from "./style";
-import Link from "next/link";
 
 const Navbar = () => {
+  const router = useRouter();
+  const pathname = usePathname();
+
+  const getRoute = (pageName) => {
+    return Boolean(pathname === pageName);
+  };
   return (
     <Container>
       <Wrapper className="container">
@@ -19,24 +27,47 @@ const Navbar = () => {
         </Logo>
         <MenuItems>
           <MenuItem>
-            <Link href="/">Home</Link>
+            <Link
+              href="/"
+              style={{ color: getRoute("/") && "var(--primary-color)" }}
+            >
+              Home
+            </Link>
           </MenuItem>
           <MenuItem>
-            <Link href="/about">About</Link>
+            <Link
+              href="/about"
+              style={{ color: getRoute("/about") && "var(--primary-color)" }}
+            >
+              About
+            </Link>
           </MenuItem>
           <MenuItem>
-            <Link href="/packages">Packages</Link>
+            <Link
+              href="/packages"
+              style={{ color: getRoute("/packages") && "var(--primary-color)" }}
+            >
+              Packages
+            </Link>
           </MenuItem>
           <MenuItem>
-            <Link href="/contact">Contact Us</Link>
+            <Link
+              href="/contact"
+              style={{ color: getRoute("/contact") && "var(--primary-color)" }}
+            >
+              Contact Us
+            </Link>
           </MenuItem>
           <MenuItem>
-            <Link href="/faq">FAQ</Link>
+            <Link
+              href="/faq"
+              style={{ color: getRoute("/faq") && "var(--primary-color)" }}
+            >
+              FAQ
+            </Link>
           </MenuItem>
         </MenuItems>
-        <Register>
-          <Link href="/register">Registe</Link>
-        </Register>
+        <Register onClick={() => router.push("/register")}>Registe</Register>
       </Wrapper>
     </Container>
   );

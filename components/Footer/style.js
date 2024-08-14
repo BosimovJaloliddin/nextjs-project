@@ -90,6 +90,9 @@ Icon.Instagram = styled(instagram)`
   }
 `;
 Icon.Telegram = styled(telegram)`
+  & path {
+    fill: #697687;
+  }
   &:hover {
     & path {
       fill: var(--primary-color);

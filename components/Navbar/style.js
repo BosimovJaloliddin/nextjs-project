@@ -65,14 +65,12 @@ export const MenuItem = styled.li`
   }
 `;
 export const Register = styled.button`
-  a {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18px;
-    text-align: center;
-    text-decoration: none;
-    color: var(--white-color);
-  }
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white-color);
   padding: 16px 29px;
   background-color: var(--primary-color);
   border-radius: 10px;
