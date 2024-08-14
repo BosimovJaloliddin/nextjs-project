@@ -6,14 +6,14 @@ import telegram from "@/assets/icons/telegram.svg";
 
 export const Container = styled.footer`
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 `;
 export const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 15px;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
 `;
 export const Logo = styled.div`
   .logo-trip {

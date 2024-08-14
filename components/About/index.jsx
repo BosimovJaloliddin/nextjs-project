@@ -16,7 +16,7 @@ import {
 
 import img from "../../assets/imgs/about.png";
 
-const About = () => {
+export const About = () => {
   return (
     <Container>
       <Wrapper className="container">
