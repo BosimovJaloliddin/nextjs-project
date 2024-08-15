@@ -33,9 +33,9 @@ const Footer = () => {
           <MenuItem>
             <Link href="/contact">Contact Us</Link>
           </MenuItem>
-          <MenuItem>
+          {/* <MenuItem>
             <Link href="/faq">FAQ</Link>
-          </MenuItem>
+          </MenuItem> */}
         </MenuItems>
         <Contacts>
           <Link target="_blanck" href="https://www.facebook.com/">

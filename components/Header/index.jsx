@@ -5,8 +5,7 @@ import GenericButton from "../Generic/Button";
 import Title from "../Generic/Title";
 import { Container, HeadImg, Section, Wrapper } from "./style";
 
-import img1 from "../../assets/imgs/head-1.png";
-import img2 from "../../assets/imgs/head-2.png";
+import img from "../../assets/imgs/head.png";
 import Image from "next/image";
 
 const Header = () => {
@@ -14,14 +13,7 @@ const Header = () => {
     <Container>
       <Wrapper className="container">
         <Section>
-          <Image src={img1} width={320} height={440} alt="header-1" />
-          <Image
-            src={img2}
-            width={240}
-            height={330}
-            style={{ position: "absolute", left: 190, top: 160 }}
-            alt="header-2"
-          />
+          <Image src={img} width={420} height={480} alt="header-1" />
         </Section>
         <Section>
           <InfoTitle mb={15}>Book Now</InfoTitle>

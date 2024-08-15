@@ -58,14 +58,14 @@ const Navbar = () => {
               Contact Us
             </Link>
           </MenuItem>
-          <MenuItem>
+          {/* <MenuItem>
             <Link
               href="/faq"
               style={{ color: getRoute("/faq") && "var(--primary-color)" }}
             >
               FAQ
             </Link>
-          </MenuItem>
+          </MenuItem> */}
         </MenuItems>
         <Register onClick={() => router.push("/register")}>Registe</Register>
       </Wrapper>
