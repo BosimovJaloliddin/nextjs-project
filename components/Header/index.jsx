@@ -13,7 +13,13 @@ const Header = () => {
     <Container>
       <Wrapper className="container">
         <Section>
-          <Image src={img} width={420} height={480} alt="header-1" />
+          <Image
+            className="head-img"
+            src={img}
+            width={420}
+            height={480}
+            alt="header-1"
+          />
         </Section>
         <Section>
           <InfoTitle mb={15}>Book Now</InfoTitle>

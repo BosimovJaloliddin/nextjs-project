@@ -18,4 +18,25 @@ export const Container = styled.button`
   &:active {
     transform: scale(0.98);
   }
+
+  @media (max-width: 1200px) {
+    width: ${({ w }) => (w ? `${w}px` : "150px")};
+    height: ${({ h }) => (h ? `${h}px` : "55px")};
+    font-size: ${({ fs }) => (fs ? `${fs / (9 / 10)}px` : "16px")};
+  }
+  @media (max-width: 768px) {
+    width: ${({ w }) => (w ? `${w}px` : "140px")};
+    height: ${({ h }) => (h ? `${h}px` : "45px")};
+    font-size: ${({ fs }) => (fs ? `${fs / (8 / 10)}px` : "14px")};
+  }
+  @media (max-width: 480px) {
+    width: ${({ w }) => (w ? `${w}px` : "120px")};
+    height: ${({ h }) => (h ? `${h}px` : "40px")};
+    font-size: ${({ fs }) => (fs ? `${fs / (7 / 10)}px` : "12px")};
+  }
+  @media (max-width: 320px) {
+    width: ${({ w }) => (w ? `${w}px` : "100px")};
+    height: ${({ h }) => (h ? `${h}px` : "35px")};
+    font-size: ${({ fs }) => (fs ? `${fs / (7 / 10)}px` : "12px")};
+  }
 `;

@@ -7,6 +7,13 @@ import telegram from "@/assets/icons/telegram.svg";
 export const Container = styled.footer`
   padding-top: 100px;
   padding-bottom: 30px;
+
+  @media (max-width: 768px) {
+    padding-top: 60px;
+  }
+  @media (max-width: 480px) {
+    padding-top: 40px;
+  }
 `;
 export const Wrapper = styled.div`
   display: flex;
@@ -48,6 +55,10 @@ export const MenuItems = styled.ul`
   justify-content: space-around;
   gap: 24px;
   list-style: none;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 export const MenuItem = styled.li`
   a {

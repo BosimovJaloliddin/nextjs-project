@@ -23,12 +23,12 @@ export const About = () => {
         <Section>
           <InfoTitle mb={15}>Book Now</InfoTitle>
           <Title mb={20}>Let’s Enjoy Your Trip with TripGoal</Title>
-          <Subtitle mb={49}>
+          <Subtitle mb={45}>
             Thinking of taking a break from every day's busy life? Planning to
             go out of the country with your loved ones to have some fun and
             quality time in a cost-effective way?
           </Subtitle>
-          <BoxWrapper mb={26}>
+          <BoxWrapper>
             <Box>
               <BoxTitle>10M+</BoxTitle>
               <BoxSubtitle>Visitors</BoxSubtitle>
@@ -50,7 +50,7 @@ export const About = () => {
           </BoxWrapper>
         </Section>
         <Section>
-          <Image src={img} width={500} alt="about" />
+          <Image className="about-img" src={img} width={500} alt="about" />
         </Section>
       </Wrapper>
     </Container>

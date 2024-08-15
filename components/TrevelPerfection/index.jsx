@@ -13,7 +13,7 @@ const TrevelPerfection = () => {
       <Title textA="center" mb={20} fs={40}>
         Find travel perfection
       </Title>
-      <Subtitle textA="center" mb={70}>
+      <Subtitle textA="center">
         Naturally head of the class whenit comes to luxury travel
         planning,bbecause <br /> we do more homework than anyone else
       </Subtitle>

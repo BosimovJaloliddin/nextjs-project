@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+import bar from "@/assets/icons/bar.svg";
+
 export const Container = styled.nav`
   background-color: #f8f8f8;
 `;
@@ -36,6 +38,21 @@ export const Logo = styled.div`
   user-select: none;
   -webkit-user-select: none;
   cursor: context-menu;
+
+  @media (max-width: 1200px) {
+    .logo-trip {
+      font-size: 22px;
+    }
+    .logo-goal {
+      font-size: 22px;
+
+      &::after {
+        margin-left: 3px;
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
 `;
 export const MenuItems = styled.ul`
   display: flex;
@@ -43,6 +60,13 @@ export const MenuItems = styled.ul`
   justify-content: space-around;
   gap: 24px;
   list-style: none;
+
+  @media (max-width: 1200px) {
+    gap: 18px;
+  }
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 export const MenuItem = styled.li`
   a {
@@ -61,6 +85,16 @@ export const MenuItem = styled.li`
 
     &:hover {
       color: var(--primary-color);
+    }
+  }
+  @media (max-width: 768px) {
+    a {
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 480px) {
+    a {
+      font-size: 14px;
     }
   }
 `;
@@ -83,5 +117,44 @@ export const Register = styled.button`
   }
   &:active {
     transform: scale(0.98);
+  }
+
+  @media (max-width: 768px) {
+    padding: 12px 20px;
+  }
+  @media (max-width: 480px) {
+    font-size: 14px;
+    padding: 8px 10px;
+    border-radius: 7px;
+  }
+`;
+
+export const Icon = styled.div`
+  display: none;
+  @media (max-width: 480px) {
+    display: block;
+  }
+`;
+Icon.Bar = styled(bar)``;
+
+// MODAL MOBILE
+export const ModalWrapper = styled.ul`
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 60px;
+  z-index: 11;
+
+  display: ${({ open }) => (open ? "flex" : "none")};
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+
+  background-color: #00224871;
+  list-style: none;
+`;
+export const ModalItem = styled(MenuItem)`
+  a {
+    color: var(--white-color);
   }
 `;

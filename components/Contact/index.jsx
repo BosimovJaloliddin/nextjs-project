@@ -19,7 +19,7 @@ const Contact = () => {
           <GenericButton>Contact Us</GenericButton>
         </Section>
         <Section>
-          <Image src={img} />
+          <Image className="contact-img" src={img} />
         </Section>
       </Wrapper>
     </Container>
