@@ -36,6 +36,21 @@ export const Logo = styled.div`
   user-select: none;
   -webkit-user-select: none;
   cursor: context-menu;
+
+  @media (max-width: 1200px) {
+    .logo-trip {
+      font-size: 22px;
+    }
+    .logo-goal {
+      font-size: 22px;
+
+      &::after {
+        margin-left: 3px;
+        width: 6px;
+        height: 6px;
+      }
+    }
+  }
 `;
 export const MenuItems = styled.ul`
   display: flex;
@@ -43,6 +58,13 @@ export const MenuItems = styled.ul`
   justify-content: space-around;
   gap: 24px;
   list-style: none;
+
+  @media (max-width: 1200px) {
+    gap: 18px;
+  }
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 export const MenuItem = styled.li`
   a {
@@ -61,6 +83,11 @@ export const MenuItem = styled.li`
 
     &:hover {
       color: var(--primary-color);
+    }
+  }
+  @media (max-width: 768px) {
+    a {
+      font-size: 16px;
     }
   }
 `;
@@ -83,5 +110,9 @@ export const Register = styled.button`
   }
   &:active {
     transform: scale(0.98);
+  }
+
+  @media (max-width: 768px) {
+    padding: 12px 20px;
   }
 `;

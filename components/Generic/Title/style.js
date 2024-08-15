@@ -10,4 +10,20 @@ export const Container = styled.h1`
   text-transform: capitalize;
   line-height: 60px;
   color: #002248;
+
+  @media (max-width: 1200px) {
+    font-size: ${({ fs }) => (fs ? `${fs / (9 / 10)}px` : "48px")};
+  }
+  @media (max-width: 768px) {
+    font-size: ${({ fs }) => (fs ? `${fs / (8 / 10)}px` : "40px")};
+    line-height: 50px;
+  }
+  @media (max-width: 480px) {
+    font-size: ${({ fs }) => (fs ? `${fs / (7 / 10)}px` : "32px")};
+    line-height: 40px;
+  }
+  @media (max-width: 320px) {
+    font-size: ${({ fs }) => (fs ? `${fs / (6 / 10)}px` : "30px")};
+    line-height: 38px;
+  }
 `;

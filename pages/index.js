@@ -20,11 +20,11 @@ export default function Home() {
       </Head>
       <>
         <Header />
-        <TrevelPerfection />
+        {/* <TrevelPerfection />
         <Location />
         <Tour />
         <About />
-        <Contact />
+        <Contact /> */}
       </>
     </>
   );

@@ -48,6 +48,10 @@ export const MenuItems = styled.ul`
   justify-content: space-around;
   gap: 24px;
   list-style: none;
+
+  @media (max-width: 480px) {
+    display: none;
+  }
 `;
 export const MenuItem = styled.li`
   a {
