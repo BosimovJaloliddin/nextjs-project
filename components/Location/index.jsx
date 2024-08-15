@@ -42,13 +42,17 @@ const Location = () => {
             Travel is my life. Since 1999, I’ve been traveling around the world
             nonstop. <br /> If you also love travel, you’re in the right place!
           </Subtitle>
-          <Wrapper df="flex" al="center" gap={24}>
+          <Wrapper top="top" df="flex" al="center" gap={24}>
             <Icon onClick={() => onController("left")} />
             <Icon onClick={() => onController("right")} position="right" />
           </Wrapper>
         </Wrapper>
 
         <Wrapper>
+          <Wrapper bottom="bottom" df="flex" al="center" gap={14} mb={30}>
+            <Icon onClick={() => onController("left")} />
+            <Icon onClick={() => onController("right")} position="right" />
+          </Wrapper>
           <SliderWrapper size={size}>
             <SliderBox>
               <Image
