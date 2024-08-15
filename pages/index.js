@@ -22,9 +22,9 @@ export default function Home() {
         <Header />
         <TrevelPerfection />
         <Location />
-        {/* <Tour />
+        <Tour />
         <About />
-        <Contact /> */}
+        <Contact />
       </>
     </>
   );

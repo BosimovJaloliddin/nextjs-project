@@ -5,6 +5,10 @@ import map from "@/assets/icons/map.svg";
 export const Container = styled.section`
   display: flex;
   overflow: hidden;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
 `;
 export const ImgWrapper = styled.div`
   position: relative;
@@ -14,12 +18,10 @@ export const ImgWrapper = styled.div`
 export const Section = styled.div`
   position: relative;
   width: 35%;
-  background-color: red;
 `;
 export const InfoWrapper = styled.div`
   height: 100%;
   position: relative;
-  /* left: -100px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
