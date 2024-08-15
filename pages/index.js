@@ -20,8 +20,8 @@ export default function Home() {
       </Head>
       <>
         <Header />
-        {/* <TrevelPerfection />
-        <Location />
+        <TrevelPerfection />
+        {/* <Location />
         <Tour />
         <About />
         <Contact /> */}
