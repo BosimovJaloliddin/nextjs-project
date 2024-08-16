@@ -1,3 +1,4 @@
+import Login from "@/components/Login";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import React from "react";
@@ -9,7 +10,9 @@ const Register = () => {
       <Head>
         <title>Register</title>
       </Head>
-      <h1>{router.pathname} In proggress....</h1>
+      <div>
+        <Login />
+      </div>
     </div>
   );
 };
