@@ -13,6 +13,8 @@ export const Container = styled.button`
   color: var(--white-color);
   border: 0;
   border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
   cursor: pointer;
   transition: all 0.2s ease;
   &:active {
