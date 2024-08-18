@@ -1,6 +1,15 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 import bar from "@/assets/icons/bar.svg";
+
+const openMenu = keyframes`
+  from{
+    opacity: 0;
+  }
+  to{
+   opacity: 1;
+  }
+`;
 
 export const Container = styled.nav`
   background-color: #f8f8f8;
@@ -144,13 +153,14 @@ export const ModalWrapper = styled.ul`
   left: 0;
   top: 60px;
   z-index: 11;
+  animation: ${openMenu} 0.4s linear;
 
   display: ${({ open }) => (open ? "flex" : "none")};
   justify-content: space-around;
   align-items: center;
   padding: 20px;
 
-  background-color: #00224871;
+  background-color: #002248;
   list-style: none;
 `;
 export const ModalItem = styled(MenuItem)`
